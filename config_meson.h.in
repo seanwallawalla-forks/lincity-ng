@@ -1,0 +1,27 @@
+#pragma once
+
+#define HAVE_DIRENT_H
+
+const auto DEFAULT_LIBDIR = "@appdatadir@";
+const auto PACKAGE_NAME = "@package_name@";
+const auto PACKAGE_VERSION = "@package_version@";
+
+constexpr auto __os_linux = 0x1;
+constexpr auto __os_win = 0x2;
+constexpr auto __os_mac = 0x4;
+
+#ifdef __linux
+const auto platform = __os_linux;
+#elif __WIN32
+const auto platform = __os_win;
+#elif __APPLE__
+const auto platform = __os_mac;
+#endif
+
+#ifdef __GNUC__
+#include <experimental/filesystem>
+namespace fs = std::experimental::filesystem;
+#else
+#include <filesystem>
+namespace fs = std::filesystem;
+#endif

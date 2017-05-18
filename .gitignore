@@ -16,3 +16,5 @@ xmlgettext
 
 # Temporary Files
 .*.swp
+
+build
