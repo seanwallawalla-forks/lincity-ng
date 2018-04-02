@@ -1,5 +1,3 @@
-//  $Id: vector.h,v 1.7 2004/11/20 22:14:35 matzebraun Exp $
-//
 //  SuperTux -  A Jump'n Run
 //  Copyright (C) 2004 Matthias Braun <matze@braunis.de>
 //
@@ -17,13 +15,7 @@
 //  along with this program; if not, write to the Free Software
 //  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
-/**
- * @author Matthias Braun
- * @file Vector2.hpp
- */
-
-#ifndef __VECTOR_HPP__
-#define __VECTOR_HPP__
+#pragma once
 
 #include <math.h>
 
@@ -125,9 +117,3 @@ public:
     float x, y; // leave this public, get/set methods just give me headaches
         // for such simple stuff :)
 };
-
-#endif
-
-
-/** @file gui/Vector2.hpp */
-

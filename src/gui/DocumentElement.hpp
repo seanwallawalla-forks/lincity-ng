@@ -16,13 +16,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-/**
- * @author Matthias Braun
- * @file DocumentElement.hpp
- */
-
-#ifndef __DOCUMENTELEMENT_HPP__
-#define __DOCUMENTELEMENT_HPP__
+#pragma once
 
 class Style;
 class XmlReader;
@@ -42,9 +36,3 @@ public:
     virtual const Style& getStyle() const = 0;
     virtual void parse(XmlReader& reader, const Style& parentstyle) = 0;
 };
-
-#endif
-
-
-/** @file gui/DocumentElement.hpp */
-

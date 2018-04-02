@@ -16,13 +16,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-/**
- * @author Matthias Braun
- * @file TableLayout.hpp
- */
-
-#ifndef __TABLELAYOUT_HPP__
-#define __TABLELAYOUT_HPP__
+#pragma once
 
 #include <vector>
 #include "Component.hpp"
@@ -108,9 +102,3 @@ private:
     Cells cells;
     bool border;
 };
-
-#endif
-
-
-/** @file gui/TableLayout.hpp */
-

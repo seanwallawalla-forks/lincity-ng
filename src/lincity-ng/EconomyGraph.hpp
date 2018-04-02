@@ -15,8 +15,7 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
-#ifndef __EconomyGraph_HPP
-#define __EconomyGraph_HPP
+#pragma once
 
 #include "gui/Component.hpp"
 #include "gui/XmlReader.hpp"
@@ -65,8 +64,3 @@ private:
 };
 
 EconomyGraph* getEconomyGraph();
-
-#endif
-
-/** @file lincity-ng/EconomyGraph.hpp */
-

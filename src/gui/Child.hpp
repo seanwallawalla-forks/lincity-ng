@@ -16,13 +16,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-/**
- * @author Matthias Braun
- * @file Child.hpp
- */
-
-#ifndef __CHILD_HPP__
-#define __CHILD_HPP__
+#pragma once
 
 #include <vector>
 #include "Rect2D.hpp"
@@ -103,8 +97,3 @@ public:
     iterator erase(iterator i);
     void clear();
 };
-
-#endif
-
-/** @file gui/Child.hpp */
-

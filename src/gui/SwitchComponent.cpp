@@ -19,19 +19,15 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 /**
  * @file SwitchComponent.cpp
  * @brief Implement component switch for the implementation of tabbed dialogs.
- * @author Matthias Braun.
  */
 
-#include <config.h>
+#include "config.h"
 
 #include "SwitchComponent.hpp"
 #include "XmlReader.hpp"
 #include "ComponentLoader.hpp"
 #include "ComponentFactory.hpp"
 
-/**
- * Class constructor.
- */
 SwitchComponent::SwitchComponent()
 {
     setFlags(FLAG_RESIZABLE);
@@ -177,6 +173,3 @@ SwitchComponent::opaque(const Vector2& pos) const
 }
 
 IMPLEMENT_COMPONENT_FACTORY(SwitchComponent)
-
-/** @file gui/SwitchComponent.cpp */
-

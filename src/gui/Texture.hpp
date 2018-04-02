@@ -16,13 +16,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-/**
- * @author Matthias Braun
- * @file Texture.hpp
- */
-
-#ifndef __TEXTURE_HPP__
-#define __TEXTURE_HPP__
+#pragma once
 
 #include <SDL.h>
 
@@ -41,8 +35,3 @@ public:
     virtual float getWidth() const = 0;
     virtual float getHeight() const = 0;
 };
-
-#endif
-
-/** @file gui/Texture.hpp */
-

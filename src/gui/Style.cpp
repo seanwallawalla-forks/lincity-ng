@@ -16,12 +16,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-/**
- * @author Matthias Braun
- * @file Style.cpp
- */
-
-#include <config.h>
+#include "config.h"
 
 #include "Style.hpp"
 #include "XmlReader.hpp"
@@ -202,7 +197,3 @@ Style::toSpan(void)
     if (alignment == ALIGN_CENTER)
     {   alignment = ALIGN_LEFT;}
 }
-
-
-/** @file gui/Style.cpp */
-

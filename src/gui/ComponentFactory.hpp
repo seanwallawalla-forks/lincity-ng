@@ -16,13 +16,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-/**
- * @author Matthias Braun
- * @file ComponentFactory.hpp
- */
-
-#ifndef __COMPONENT_FACTORY_HPP__
-#define __COMPONENT_FACTORY_HPP__
+#pragma once
 
 #include <map>
 #include <string>
@@ -78,11 +72,3 @@ public:                                                                     \
 #define IMPLEMENT_COMPONENT_FACTORY(CLASS)                                  \
 DECLARE_COMPONENT_FACTORY(CLASS)                                            \
 INTERN_##CLASS##Factory factory_##CLASS;
-
-#endif
-
-
-/** @file gui/ComponentFactory.hpp */
-/*      CLASS * component = dynamic_cast<CLASS *>(new CLASS());
-
-      */

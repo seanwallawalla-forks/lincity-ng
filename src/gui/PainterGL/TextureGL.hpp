@@ -15,8 +15,8 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
-#ifndef __TEXTUREGL_HPP__
-#define __TEXTUREGL_HPP__
+
+#pragma once
 
 #include <SDL_opengl.h>
 #include "gui/Rect2D.hpp"
@@ -47,9 +47,3 @@ private:
     float width, height;
     Rect2D rect;
 };
-
-#endif
-
-
-/** @file gui/PainterGL/TextureGL.hpp */
-

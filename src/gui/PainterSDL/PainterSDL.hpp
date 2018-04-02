@@ -15,8 +15,7 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
-#ifndef __PAINTERSDL_HPP__
-#define __PAINTERSDL_HPP__
+#pragma once
 
 #include <SDL.h>
 #include <vector>
@@ -80,8 +79,3 @@ private:
     SDL_Surface* target;
     Color fillColor,lineColor;
 };
-
-#endif
-
-/** @file gui/PainterSDL/PainterSDL.hpp */
-

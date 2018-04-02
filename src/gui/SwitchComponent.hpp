@@ -16,13 +16,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-/**
- * @author Matthias Braun
- * @file SwitchComponent.hpp
- */
-
-#ifndef __SWITCH_COMPONENT_HPP__
-#define __SWITCH_COMPONENT_HPP__
+#pragma once
 
 #include <string>
 #include "Component.hpp"
@@ -31,7 +25,6 @@ class XmlReader;
 
 /**
  * @class SwitchComponent
- * @author Matthias Braun
  * @brief Component for component switch (used to implement tabbed dialogs).
  *
  * This component keeps a list of several components and
@@ -51,9 +44,3 @@ public:
     void switchComponent(const std::string& name);
     Component* getActiveComponent();
 };
-
-#endif
-
-
-/** @file gui/SwitchComponent.hpp */
-

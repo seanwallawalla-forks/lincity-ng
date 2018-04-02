@@ -16,13 +16,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-/**
- * @author Matthias Braun
- * @file Color.hpp
- */
-
-#ifndef __COLOR_HPP__
-#define __COLOR_HPP__
+#pragma once
 
 #include <stdint.h>
 #include <SDL.h>
@@ -64,9 +58,3 @@ public:
 
     uint8_t r, g, b, a;
 };
-
-#endif
-
-
-/** @file gui/Color.hpp */
-

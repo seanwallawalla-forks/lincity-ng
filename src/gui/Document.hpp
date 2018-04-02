@@ -16,13 +16,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-/**
- * @author Matthias Braun
- * @file Document.hpp
- */
-
-#ifndef __DOCUMENT_HPP__
-#define __DOCUMENT_HPP__
+#pragma once
 
 #include <vector>
 #include "Style.hpp"
@@ -53,9 +47,3 @@ public:
 private:
     void paragraphLinkClicked(Paragraph* paragraph, const std::string& href);
 };
-
-#endif
-
-
-/** @file gui/Document.hpp */
-

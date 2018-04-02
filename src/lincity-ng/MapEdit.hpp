@@ -15,8 +15,8 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
-#ifndef __MAP_EDIT_HPP__
-#define __MAP_EDIT_HPP__
+
+#pragma once
 
 #include "MapPoint.hpp"
 
@@ -28,8 +28,3 @@ extern int monument_bul_flag;
 extern int river_bul_flag;
 extern int shanty_bul_flag;
 extern int build_bridge_flag;
-
-#endif
-
-/** @file lincity-ng/MapEdit.hpp */
-

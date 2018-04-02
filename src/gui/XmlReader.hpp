@@ -17,13 +17,11 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
 /**
- * @author Matthias Braun.
  * @file gui/XmlReader.hpp
  * @brief Simple wrapper around libxml2 xmlreader interface.
  */
 
-#ifndef __XMLREADER_HPP__
-#define __XMLREADER_HPP__
+#pragma once
 
 #include <libxml/xmlreader.h>
 #include <stdexcept>
@@ -161,9 +159,3 @@ private:
     static int readCallback(void* context, char* buffer, int len);
     static int closeCallback(void* context);
 };
-
-#endif
-
-
-/** @file gui/XmlReader.hpp */
-

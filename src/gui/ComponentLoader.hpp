@@ -16,13 +16,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-/**
- * @author Matthias Braun
- * @file ComponentLoader.hpp
- */
-
-#ifndef __COMPONENTLOADER_HPP__
-#define __COMPONENTLOADER_HPP__
+#pragma once
 
 #include <string>
 
@@ -50,8 +44,3 @@ Component* parseEmbeddedComponent(XmlReader& reader);
  * the component and return it.
  */
 Component* createComponent(const std::string& type, XmlReader& reader);
-
-#endif
-
-/** @file gui/ComponentLoader.hpp */
-

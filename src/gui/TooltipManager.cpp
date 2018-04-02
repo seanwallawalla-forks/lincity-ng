@@ -16,12 +16,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-/**
- * @author Matthias Braun
- * @file TooltipManager.cpp
- */
-
-#include <config.h>
+#include "config.h"
 
 #include "TooltipManager.hpp"
 #include "XmlReader.hpp"
@@ -130,6 +125,3 @@ TooltipManager::showTooltip(const std::string& text, const Vector2& pos)
 }
 
 IMPLEMENT_COMPONENT_FACTORY(TooltipManager)
-
-/** @file gui/TooltipManager.cpp */
-

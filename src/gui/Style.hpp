@@ -16,13 +16,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-/**
- * @author Matthias Braun
- * @file Style.hpp
- */
-
-#ifndef __FONTSTYLE_HPP__
-#define __FONTSTYLE_HPP__
+#pragma once
 
 #include <SDL.h>
 #include <string>
@@ -31,11 +25,6 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 #include "Color.hpp"
 
 class XmlReader;
-
-/**
- * @class Style
- */
-//TODO make distinct styles for paragraphs and spans
 
 class Style
 {
@@ -70,9 +59,3 @@ private:
 
 extern std::map<std::string, Style> styleRegistry;
 void parseStyleDef(XmlReader& reader);
-
-#endif
-
-
-/** @file gui/Style.hpp */
-

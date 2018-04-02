@@ -16,13 +16,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-/**
- * @author Matthias Braun
- * @file ScrollView.hpp
- */
-
-#ifndef __SCROLLVIEW_HPP__
-#define __SCROLLVIEW_HPP__
+#pragma once
 
 #include "Component.hpp"
 
@@ -52,9 +46,3 @@ private:
     Child& scrollBar()
     { return childs[1]; }
 };
-
-#endif
-
-
-/** @file gui/ScrollView.hpp */
-

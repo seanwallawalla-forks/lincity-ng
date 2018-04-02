@@ -15,8 +15,8 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
-#ifndef __CALLBACKBASE_HPP__
-#define __CALLBACKBASE_HPP__
+
+#pragma once
 
 template<typename Arg1T, typename Arg2T = void>
 class CallbackBase
@@ -38,9 +38,3 @@ public:
     
     virtual void operator()(Arg1T arg) const = 0;
 };
-
-#endif
-
-
-/** @file gui/callback/CallbackBase.hpp */
-

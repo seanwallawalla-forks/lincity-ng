@@ -16,13 +16,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-/**
- * @author Matthias Braun
- * @file TextureManager.hpp
- */
-
-#ifndef __TEXTUREMANAGER_HPP__
-#define __TEXTUREMANAGER_HPP__
+#pragma once
 
 #include <SDL.h>
 #include <map>
@@ -95,8 +89,3 @@ private:
 };
 
 extern TextureManager* texture_manager;
-
-#endif
-
-/** @file gui/TextureManager.hpp */
-

@@ -16,13 +16,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-/**
- * @author Matthias Braun
- * @file Desktop.hpp
- */
-
-#ifndef __DESKTOP_HPP__
-#define __DESKTOP_HPP__
+#pragma once
 
 #include <vector>
 #include "Component.hpp"
@@ -64,9 +58,3 @@ private:
     typedef std::vector<Rect2D> DirtyRectangles;
     DirtyRectangles dirtyRectangles;
 };
-
-#endif
-
-
-/** @file gui/Desktop.hpp */
-

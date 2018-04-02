@@ -16,13 +16,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-/**
- * @author Matthias Braun
- * @file Button.hpp
- */
-
-#ifndef __BUTTON_HPP__
-#define __BUTTON_HPP__
+#pragma once
 
 #include <SDL.h>
 #include "Component.hpp"
@@ -87,8 +81,3 @@ private:
     Vector2 mouseholdPos;
     float fixWidth, fixHeight;
 };
-
-#endif
-
-/** @file gui/Button.hpp */
-

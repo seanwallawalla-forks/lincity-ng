@@ -16,12 +16,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-/**
- * @author Matthias Braun
- * @file TextureManager.cpp
- */
-
-#include <config.h>
+#include "config.h"
 
 #include "TextureManager.hpp"
 
@@ -80,7 +75,3 @@ TextureManager::load(const std::string& filename, Filter filter)
     
     return result;
 }
-
-
-/** @file gui/TextureManager.cpp */
-

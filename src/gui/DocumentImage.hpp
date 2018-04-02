@@ -16,13 +16,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-/**
- * @author Matthias Braun
- * @file DocumentImage.hpp
- */
-
-#ifndef __DOCUMENTIMAGE_HPP__
-#define __DOCUMENTIMAGE_HPP__
+#pragma once
 
 #include "Component.hpp"
 #include "DocumentElement.hpp"
@@ -51,9 +45,3 @@ private:
     Style style;
     std::string filename;
 };
-
-#endif
-
-
-/** @file gui/DocumentImage.hpp */
-

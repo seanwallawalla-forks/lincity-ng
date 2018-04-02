@@ -9,7 +9,7 @@
 #if defined (WIN32)
 #include "confw32.h"
 #else
-#include <config.h>
+#include "config.h"
 #endif
 
 #ifndef _MSC_VER

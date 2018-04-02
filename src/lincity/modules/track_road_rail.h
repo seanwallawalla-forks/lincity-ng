@@ -1,3 +1,5 @@
+#pragma once
+
 #include "modules.h"
 #include "../lintypes.h"
 #include "../lctypes.h"
@@ -225,4 +227,3 @@ public:
     int anim;
     bool burning_waste;
 };
-

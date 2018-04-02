@@ -19,10 +19,9 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 /**
  * @file gui/XmlReader.cpp
  * @brief Implement a simple XML file reader (simple wrapper around libxml2 xmlreader interface).
- * @author Matthias Braun.
  */
 
-#include <config.h>
+#include "config.h"
 
 #include "./XmlReader.hpp"
 
@@ -96,7 +95,3 @@ XmlReader::closeCallback(void* context)
     }
     return res;
 }
-
-
-/** @file gui/XmlReader.cpp */
-

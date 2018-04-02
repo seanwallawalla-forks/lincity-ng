@@ -16,12 +16,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-/**
- * @author Matthias Braun
- * @file Image.cpp
- */
-
-#include <config.h>
+#include "config.h"
 
 #include "Image.hpp"
 #include "XmlReader.hpp"
@@ -135,7 +130,3 @@ void Image::setFile(const std::string &pfilename)
 }
 
 IMPLEMENT_COMPONENT_FACTORY(Image)
-
-
-/** @file gui/Image.cpp */
-
