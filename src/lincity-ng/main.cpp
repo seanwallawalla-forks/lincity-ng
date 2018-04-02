@@ -76,39 +76,33 @@ void initPhysfs(const char* argv0)
     const char* application = LC_SAVE_DIR;
     const char* userdir = PHYSFS_getUserDir();
     const char* dirsep = PHYSFS_getDirSeparator();
-    char* writedir = new char[strlen(userdir) + strlen(application) + 2];
 
     // Set configuration directory
     //sprintf(writedir, "%s.%s", userdir, application);
-    sprintf(writedir, "%s%s", userdir, application);
-    if(!PHYSFS_setWriteDir(writedir)) {
+    auto writedir = std::string() + userdir + application;
+    if(!PHYSFS_setWriteDir(writedir.c_str())) {
         // try to create the directory
-        char* mkdir = new char[strlen(application) + 2];
-        sprintf(mkdir, "%s", application);
-        if(!PHYSFS_setWriteDir(userdir) || !PHYSFS_mkdir(mkdir)) {
+        const auto newdir = std::string(application);
+
+        if(!PHYSFS_setWriteDir(userdir) || !fs::create_directory(newdir)) {
             std::ostringstream msg;
             msg << "Failed creating configuration directory '" <<
                 writedir << "': " << PHYSFS_getLastError();
-            delete[] writedir;
-            delete[] mkdir;
             throw std::runtime_error(msg.str());
         }
-        delete[] mkdir;
 
-        if(!PHYSFS_setWriteDir(writedir)) {
+        if(!PHYSFS_setWriteDir(writedir.c_str())) {
             std::ostringstream msg;
             msg << "Failed to use configuration directory '" <<
                 writedir << "': " << PHYSFS_getLastError();
-            delete[] writedir;
             throw std::runtime_error(msg.str());
         }
     }
-    PHYSFS_addToSearchPath(writedir, 0);
+    PHYSFS_addToSearchPath(writedir.c_str(), 0);
 
     // add ~/.lincity for old savegames
-    sprintf(writedir, "%s.lincity", userdir);
-    PHYSFS_addToSearchPath(writedir, 1);
-    delete[] writedir;
+    writedir = std::string() + userdir + ".lincity";
+    PHYSFS_addToSearchPath(writedir.c_str(), 1);
 
   //TODO: add zips later
     // Search for archives and add them to the search path
@@ -297,7 +291,7 @@ void initVideo(int width, int height)
         std::cerr << "* Fallback to 800x600.\n";
     }
 
-    SDL_WM_SetCaption(PACKAGE_NAME " " PACKAGE_VERSION, 0);
+    SDL_WM_SetCaption((std::string() + PACKAGE_NAME + " " + PACKAGE_VERSION).c_str(), 0);
     if(!screen) {
         std::stringstream msg;
         msg << "Couldn't set video mode ("

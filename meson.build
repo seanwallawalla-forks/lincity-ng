@@ -8,6 +8,12 @@ project(
 
 compiler = meson.get_compiler('cpp')
 
+if compiler.get_id() == 'gcc'
+  extra_args = ['-lstdc++fs']
+else
+  extra_args = []
+endif
+
 conf_data = configuration_data()
 conf_data.set('appdatadir', join_paths(get_option('prefix'), 'share'))
 conf_data.set('package_name', 'LinCity-NG')
@@ -194,4 +200,5 @@ executable(
         physfsstream,
         tinygettext,
     ],
+    link_args: extra_args,
 )
