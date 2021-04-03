@@ -106,7 +106,7 @@ program even if the selected video-mode is not working as expected.
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ !-->
 
-3 Gameplay
+## 3 Gameplay
 
 See the ingame help [F1] for more details.
 
@@ -175,7 +175,7 @@ use shift + direction to scroll faster
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ !-->
 
-4 Contact
+## 4 Contact
 
 Bugs should be reported to:
     https://github.com/lincity-ng/lincity-ng/issues
