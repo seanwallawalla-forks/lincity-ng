@@ -1,17 +1,27 @@
-                            LinCity-NG
-                     a city simulation game
 
-                   https://github.com/lincity-ng/lincity-ng
+***
+
+![LinCity_NG.png](LinCity_NG.png)
+
+# LinCity-NG
+
+_a city simulation game_
+
+[https://github.com/lincity-ng/lincity-ng](https://github.com/lincity-ng/lincity-ng)
 
 Contents:
-1. Introduction
-2. Building and Installation
-3. Gameplay
-4. Contact
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[1. Introduction](#1-Introduction)
 
-1. Introduction
+[2. Building and Installation](#2-Building-and-Installation)
+
+[3. Gameplay](#3-Gameplay)
+
+[4. Contact](#4-Contact)
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ !-->
+
+## 1 Introduction
 LinCity-NG is a city simulation game. It is a polished and improved
 version of the classic LinCity game. In the game, you are required
 to build and maintain a city. You can win the game either by
@@ -20,9 +30,9 @@ spaceships.
 
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ !-->
 
-2. Building and Installation
+## 2 Building and Installation
 
 
 These are generic instructions, please see the wiki for more specific instructions
@@ -94,9 +104,9 @@ If you are in the main menu, you can quit the program also by
 pressing 'ESCAPE' or '^c'. This might be a way to terminate the
 program even if the selected video-mode is not working as expected.
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ !-->
 
-3. Gameplay
+3 Gameplay
 
 See the ingame help [F1] for more details.
 
@@ -163,9 +173,9 @@ use shift + direction to scroll faster
  F12 quick save
  F9  quick load
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ !-->
 
-4. Contact
+4 Contact
 
 Bugs should be reported to:
     https://github.com/lincity-ng/lincity-ng/issues
@@ -176,3 +186,4 @@ or you might be able to catch us in irc at irc.freenode.net #lincity.
 
 Visit our homepage: https://github.com/lincity-ng/lincity-ng
 
+***
